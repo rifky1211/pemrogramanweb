@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tugas 5</title>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <td class="table"><label for="username">User Name</label></td>
+        <td class="table">
+          <input type="text" id="username" placeholder="Username" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="password">Password</label></td>
+        <td class="table">
+          <input type="password" id="password" placeholder="Password" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="repassword">Re-type Password</label></td>
+        <td class="table">
+          <input type="password" id="repassword" placeholder="Password" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="email">Email</label></td>
+        <td>
+          <input type="text" id="email" placeholder="Email" size="50" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="nama">Nama</label></td>
+        <td class="table">
+          <input type="text" id="nama" placeholder="Nama" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="nim">NIM</label></td>
+        <td class="table">
+          <input type="text" id="nim" placeholder="NIM" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="alamat">Alamat</label></td>
+        <td class="table">
+          <input type="text" id="alamat" placeholder="Alamat" />
+        </td>
+      </tr>
+      <tr>
+        <td class="table"><label for="radio">Jenis Kelamin</label></td>
+        <td class="table">
+          <input type="radio" id="radio" />Pria
+          <input type="radio" id="radio" />Wanita
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="kota">Kota</label>
+        </td>
+        <td>
+          <select name="kota" id="kota">
+            <option value="1">Bekasi</option>
+            <option value="2">Jakarta</option>
+            <option value="3">Bandung</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="hobi">Hobi</label></td>
+        <td>
+          <input type="checkbox" />Coding <br />
+          <input type="checkbox" />PS an <br />
+          <input type="checkbox" />Bilyard
+        </td>
+      </tr>
+      <tr>
+        <td><label for="deskripsi">Deskripsi Pribadi</label></td>
+        <td>
+          <textarea
+            name="deskripsi"
+            id="deskripsi"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      var i;
+      var sum = 0;
+      var fib = [];
+
+      fib[0] = 0;
+      fib[1] = 1;
+      for (i = 2; i <= 26; i++) {
+        fib[i] = fib[i - 2] + fib[i - 1];
+        sum += fib[i];
+        console.log(fib[i]);
+      }
+      var bagi = sum / 25;
+      console.log("Hasil Jumlah = " + sum);
+      console.log("Hasil Rata -Rata = " + bagi);
+    </script>
+  </body>
+</html>
